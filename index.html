@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Gift Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+        <h1>Hi,Jean</h1>
+        <h2>Merry Christmas!</h2>
+        <p>Let's exchange gifts!</p>
+        <button id="start-button">Start</button>
+    </div>
+
+    <!-- Letter Screen -->
+    <div class="letter-screen">
+         <p id="typing-text"></p>
+        <button id="next-button" class="hidden">Next</button>
+    </div>
+
+    <!-- Gift Selection -->
+    <div class="gift-selection">
+        <h2>Choose a gift you'd like to receive:</h2>
+        <div class="category-tabs">
+            <button class="tab-button active" data-category="electronics">Fashions</button>
+            <button class="tab-button" data-category="dolls">Dolls</button>
+            <button class="tab-button" data-category="gadgets">Others</button>
+        </div>
+
+        <div class="gift-options" id="electronics">
+            <div class="gift-option" id="gift-1">
+                <img src="./fashions/hat.jpg" alt="Gift 1">
+                <p>Hat</p>
+            </div>
+            <div class="gift-option" id="gift-2">
+                <img src="./fashions/tshirt.jpg" alt="Gift 2">
+                <p>Shirt</p>
+            </div>
+            <div class="gift-option" id="gift-3">
+                <img src="./fashions/pants.jpg" alt="Gift 3">
+                <p>Pants</p>
+            </div>
+            <div class="gift-option" id="gift-3">
+                <img src="./fashions/outer.jpg" alt="Gift 3">
+                <p>Outer</p>
+            </div>
+            <div class="gift-option" id="gift-3">
+                <img src="./fashions/dress.jpg" alt="Gift 3">
+                <p>Dress</p>
+            </div>
+        </div>
+
+        <div class="gift-options" id="dolls" style="display: none;">
+            <div class="gift-option" id="gift-4">
+                <img src="./dolls/nailoong.jpg" alt="Doll 1">
+                <p>Nailoong</p>
+            </div>
+            <div class="gift-option" id="gift-5">
+                <img src="./dolls/pinguin.jpg" alt="Doll 2">
+                <p>Pinguin</p>
+            </div>
+            <div class="gift-option" id="gift-6">
+                <img src="./dolls/pig.jpg" alt="Doll 3">
+                <p>Pig</p>
+            </div>
+
+            <div class="gift-option" id="gift-7">
+                <img src="./dolls/stitch.jpg" alt="Doll 3">
+                <p>Stitch</p>
+            </div>
+
+            <div class="gift-option" id="gift-8">
+                <img src="./dolls/zanmang.jpg" alt="Doll 3">
+                <p>Zanmang</p>
+            </div>
+        </div>
+
+        <div class="gift-options" id="gadgets" style="display: none;">
+            <div class="gift-option" id="gift-7">
+                <img src="./others/headphones.jpg" alt="Gadget 1">
+                <p>Headphones</p>
+            </div>
+            <div class="gift-option" id="gift-8">
+                <img src="./others/tumbler.jpg" alt="Gadget 2">
+                <p>Tumbler</p>
+            </div>
+            <div class="gift-option" id="gift-9">
+                <img src="./others/nightlamp.jpg" alt="Gadget 3">
+                <p>Night Lamp</p>
+            </div>
+            <div class="gift-option" id="gift-8">
+                <img src="./others/keychain.jpg" alt="Gadget 2">
+                <p>Key Chain</p>
+            </div>
+            <div class="gift-option" id="gift-9">
+                <img src="./others/pillow.jpg" alt="Gadget 3">
+                <p>Pillow</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exchange Gift Selection -->
+    <div class="exchange-gift-selection">
+        <h2>What would you like to give in return?</h2>
+            <div class="category-tabs">
+                <button class="exchange-tab-button active" data-category="fashions">Fashions</button>
+                <button class="exchange-tab-button" data-category="electronicss">Electronics</button>
+                <button class="exchange-tab-button" data-category="others">Others</button>
+            </div>
+
+            <div class="exchange-gift-options" id="fashions">
+                <div class="gift-option" id="gift-1">
+                    <img src="./fashions/hairpowder.jpg" alt="Gift 1">
+                    <p>Hair Powder</p>
+                </div>
+                <div class="gift-option" id="gift-2">
+                    <img src="./fashions/mentshirt.jpg" alt="Gift 2">
+                    <p>T-Shirt</p>
+                </div>
+                <div class="gift-option" id="gift-3">
+                    <img src="./fashions/manpants.jpg" alt="Gift 3">
+                    <p>Pants</p>
+                </div>
+                <div class="gift-option" id="gift-3">
+                    <img src="./fashions/manjaket.jpg" alt="Gift 3">
+                    <p>Outer</p>
+                </div>
+                <div class="gift-option" id="gift-3">
+                    <img src="./fashions/shoes.jpg" alt="Gift 3">
+                    <p>Shoes</p>
+                </div>
+            </div>
+
+            <div class="exchange-gift-options" id="electronicss" style="display: none;">
+                <div class="gift-option" id="gift-1">
+                    <img src="./dolls/mouse.jpg" alt="Gift 1">
+                    <p>Mouse</p>
+                </div>
+                <div class="gift-option" id="gift-2">
+                    <img src="./dolls/tws.jpg" alt="Gift 2">
+                    <p>TWS</p>
+                </div>
+                <div class="gift-option" id="gift-3">
+                    <img src="./dolls/alarm.jpg" alt="Gift 3">
+                    <p>Loftie Alarm</p>
+                </div>
+                <div class="gift-option" id="gift-3">
+                    <img src="./dolls/humidified.jpg" alt="Gift 3">
+                    <p>Humidifier</p>
+                </div>
+                <div class="gift-option" id="gift-3">
+                    <img src="./dolls/powerbank.jpg" alt="Gift 3">
+                    <p>Power Bank</p>
+                </div>
+            </div>
+
+            <div class="exchange-gift-options" id="others" style="display: none;">
+                <div class="gift-option" id="gift-7">
+                    <img src="./others/sandalbakpao.jpg" alt="Gadget 1">
+                    <p>Slippers</p>
+                </div>
+                <div class="gift-option" id="gift-8">
+                    <img src="./others/botolminum" alt="Gadget 2">
+                    <p>Tumbler</p>
+                </div>
+                <div class="gift-option" id="gift-9">
+                    <img src="./others/neklam.jpg" alt="Gadget 3">
+                    <p>Night Lamp</p>
+                </div>
+                <div class="gift-option" id="gift-8">
+                    <img src="./others/towel.jpg" alt="Gadget 2">
+                    <p>Towel</p>
+                </div>
+                <div class="gift-option" id="gift-9">
+                    <img src="./others/guling.jpg" alt="Gadget 3">
+                    <p>Bolsters</p>
+                </div>
+            </div>
+        
+    </div>
+
+    <!-- Closed  Screen -->
+    <div class="closed-screen">
+        <h2>Thank you!</h2>
+        <p>Hopefully you like this</p>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "5UpKWW4byRcAZQCnc",
+        });
+    })();
+    </script>
+    
+</body>
+</html>
