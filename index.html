@@ -189,6 +189,28 @@
     </div>
 
     <script src="script.js"></script>
+
+    <script>
+        // Function to validate the current date
+        function validateAccessDate() {
+            const currentDate = new Date(); // Get the current date
+            const accessDate = new Date('2024-12-25'); // Set the access date
+
+            // Check if the current date is before the access date
+            if (currentDate < accessDate) {
+                // Show the restriction message
+                document.body.innerHTML = `
+                    <div style="text-align: center; margin-top: 50px;">
+                        <h1>Oops! Santa says this web is off-limits until Christmas Day, December 25, 2024. <br> 
+                            Patience is a virtue🎅🎄</h1>
+                    </div>
+                `;
+            }
+        }
+
+        // Call the function on page load
+        window.onload = validateAccessDate;
+    </script>
     
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
